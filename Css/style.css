@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(circle, #05c3f3 0%, #00ff62 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+input,
+button,
+select {
+  font-size: inherit;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.theme {
+  margin-top: 20px;
+}
+#search {
+  margin-left: 70%;
+  /* margin-left: 65%; */
+  padding: 3px 5px;
+}
+
+.form {
+  padding: 5px 0 30px 0;
+}
+
+.form__wrapper {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.form__input {
+  flex-grow: 1;
+  padding: 0px 10px;
+  border-radius: 5px;
+  font-family: inherit;
+}
+.form__select,
+.twin__selects {
+  cursor: pointer;
+  border: 2px solid rgb(77, 43, 141);
+  border-radius: 3px;
+  margin: 0 3px;
+  padding: 0;
+}
+.form__select:hover {
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+.twin__selects:hover {
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+.form__btn {
+  padding: 0px 20px;
+  cursor: pointer;
+  border: 2px solid rgb(77, 43, 141);
+  border-radius: 3px;
+  background-color: #fff;
+}
+.form__btn:hover {
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+.select__box {
+  display: flex;
+  justify-content: end;
+}
+.twin__selects {
+  padding: 10px;
+}
+.filter__select {
+  margin: 0;
+}
+
+/* This is a simple <hr> */
+.hr1 {
+  width: 80%;
+  margin: 0 auto;
+  height: 4px;
+  background-color: #333;
+}
+
+.box {
+  margin-top: 20px;
+}
+.task {
+  width: 80%;
+  margin: 15px auto;
+  height: 50px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(34, 0, 78);
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.task__desc {
+  flex-grow: 1;
+  margin: 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* It work's when the user checks the checkbox input: */
+
+.task__done .task__desc {
+  text-decoration: line-through;
+}
+
+.task__done {
+  background-color: rgba(88, 87, 87, 0.7);
+}
+
+.task__priority {
+  margin-right: 15px;
+  font-weight: 900;
+}
+
+.disabled {
+  background-color: rgba(88, 87, 87, 0.7);
+}
+
+.task__input {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.task__btn {
+  width: 60px;
+  height: 30px;
+  margin: 0 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 800;
+  border: #333 3px solid;
+  transition: 0.3s all;
+}
+.task__btn:hover {
+  border: transparent 3px solid;
+}
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+.modal__box {
+  margin-top: -100px;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgb(0, 173, 241) 0px 20px 30px -10px;
+}
+.modal__top {
+  height: 45px;
+  background-color: blueviolet;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.modal__header {
+  margin: 5px;
+  color: red;
+}
+.modal__bottom {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal__bottom input,
+select {
+  padding: 3px 5px;
+}
+.modal__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: blueviolet;
+  padding: 0px 8px;
+  font-size: 20px;
+}
+.modal__btn:hover {
+  color: red;
+}
+.modal__save--btn {
+  cursor: pointer;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+}
+.modal__save--btn:hover {
+  background-color: rgb(95, 20, 165);
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+body.night {
+  background-color: rgb(9, 34, 54);
+  color: #fff;
+}
+.night .task {
+  border-color: #fff;
+}

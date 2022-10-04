@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Month-4 Day-5</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="theme">
+        <button class="theme__btn">Night</button> |
+        <button class="theme__letter theme__small">a</button>
+        <button class="theme__letter reset">Reset</button>
+        <button class="theme__letter theme__large">A</button>
+        <!-- Buni ishlatganda css dan searchni 65% qilib qo'yish kerak -->
+        <!-- <select class="theme__lang">
+          <option value="uz">Uz</option>
+          <option value="en">Eng</option>
+        </select> -->
+        <input type="search" id="search" placeholder="Search your task..." />
+      </div>
+
+      <h1 style="text-align: center; padding-top: 10px">To-do List!</h1>
+
+      <form class="form">
+        <div class="form__wrapper">
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Type your task..."
+          />
+
+          <select class="form__select" required>
+            <option value="" selected disabled>Muhimlik</option>
+            <option value="high">High</option>
+            <option value="normal">Normal</option>
+            <option value="low">Low</option>
+          </select>
+
+          <button class="form__btn"><strong>Add</strong></button>
+          <div class="select__box">
+            <select class="twin__selects sort__select">
+              <option selected disabled>Sort</option>
+              <option value="a-z">A-Z</option>
+              <option value="z-a">Z-A</option>
+              <option value="time">Reset</option>
+            </select>
+
+            <select class="twin__selects filter__select">
+              <option selected disabled>Filter</option>
+              <option value="high">High</option>
+              <option value="normal">Normal</option>
+              <option value="low">Low</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <hr class="hr1" />
+
+      <div class="box">
+        <!-- <div class="task">
+          <input type="checkbox" class="task__input" />
+          <div class="task__desc">Kitob O'qish</div>
+          <button class="task__btn task__edit">Edit</button>
+          <button class="task__btn task__delete">×</button>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal__box">
+        <div class="modal__top">
+          <button class="modal__btn">&times;</button>
+        </div>
+        <div class="modal__bottom">
+          <!-- <h1 class="modal__header">ERROR!</h1> -->
+          <input type="text" class="modal__input" />
+          <select class="modal__select" required>
+            <option value="high">High</option>
+            <option value="normal">Normal</option>
+            <option value="low">Low</option>
+          </select>
+          <button class="modal__save--btn">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/Js/main.js"></script>
+    <script src="/Js/lesson-7.js"></script>
+  </body>
+</html>
